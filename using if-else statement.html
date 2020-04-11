@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><title>using if-else statements</title></head>
+<body>
+<h1>using conditional statements</h1>
+<input type="number" id="demo"><br><br>
+<button onclick="test()">click me</button><br>
+<p id="para"></p>
+<script>
+function test()
+{
+var num1,text;
+num1=document.getElementById("demo").value;
+if(num1<0)
+{
+text ="Number is NEGATIVE";
+}
+else
+{
+text = "Number is POSITIVE";
+}
+document.getElementById("para").innerHTML = text;
+}
+</script>
+</body>
+</html>
