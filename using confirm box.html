@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><title>using confirm box</title>
+</head>
+<body>
+<h1>using confirm box</h1>
+<button onclick="confirm_box()">click me</button>
+<br>
+<p id="demo"></p>
+<script>
+
+function confirm_box()
+{
+var txt;
+if(confirm("press any option")){
+txt = "you have pressed OK";}
+else{
+txt ="You have pressed CANCEL"
+}
+document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body></html>
