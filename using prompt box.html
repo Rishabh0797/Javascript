@@ -1,0 +1,27 @@
+<!docytpe html>
+<html>
+<head>
+<title>using prompt box</title>
+</head>
+<body>
+<h1>using prompt box</h1>
+<button onclick="prompt_box()">try</button><br>
+<p id="demo"></p>
+
+<script>
+function prompt_box()
+{
+var txt;
+var name = prompt("what is your name","Rishabh Bansal");
+if(name =="" || name == null)
+{
+txt = "You have cancelled the request";
+}
+else
+{
+txt ="Hello  " + name +"!" + "Nice to meet you.Have a GOOD DAY.";
+}
+document.getElementById("demo").innerHTML = txt;
+}</script>
+</body>
+</html>
