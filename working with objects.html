@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><title>working with objects</title>
+</head>
+<body onload="test()">
+    <p id="para"></p>
+    <script>
+        function test()
+        {
+            var person ={
+                firstname : "Rishabh",
+                lastname : "Bansal",
+                age : "19",
+                fullname : function(){
+                    return this.firstname + this.lastname ;
+                }
+            };
+                document.getElementById("para").innerHTML = "Hi! " + person.fullname() + " Wlecome you :)";
+            
+        }
+    </script>
+</body>
+</html>
