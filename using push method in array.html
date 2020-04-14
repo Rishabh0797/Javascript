@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><title>working with array</title>
+</head>
+<head>
+<body>
+<h1>working with array</h1>
+<h4>When you click on "click me" new contents are added in array</h4>
+<button onclick="test()">click me</button><br>
+<p id="para"></p>
+<script>
+var txt = ["ram","sham","ravi"];
+document.getElementById("para").innerHTML = txt ;
+function test()
+{
+txt.push("rishabh","shuresh");
+document.getElementById("para").innerHTML = txt;
+}
+
+</script>
+</body>
+</html>
