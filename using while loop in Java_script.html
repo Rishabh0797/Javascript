@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><title>using while loop in Java_script</title>
+<script>
+function test(){
+  var a = document.getElementById("demo").value;
+   
+      var i=0;
+	  var b="";
+      while(i < a.length){
+         b += a[i] + "<br>";
+         i++;
+        }
+		document.getElementById("demo1").innerHTML = b;
+    
+  }</script>
+</head>
+<body>
+<h2>Using While Loop text will appear by itself</h2><br>
+<form>
+Enter your Full-name:<input type="text" id="demo" onblur="test()">
+</form>
+<br><p id="demo1"></p>
+
+  </body>
+  </html>
