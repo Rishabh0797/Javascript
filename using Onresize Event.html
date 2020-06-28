@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>using Onresize Event</title>
+<script>
+function message(msg){
+document.getElementById('para').innerHTML = msg + " Event";
+}
+</script>
+</head>
+<body onresize="message('Resize')">
+
+<h1>Hello World!</h1>
+<p>when you resize the window the following text will appear</p><br>
+<p id="para"></p>
+</body>
+</html>
