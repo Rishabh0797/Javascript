@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>Modify the DOM with events</title>
+<script>
+function open(){
+x=document.getElementById("demo");
+x.style.display="block";
+}
+function close(){
+x=document.getElementById("demo");
+x.style.display="none";
+}
+</script>
+</head>
+<body>
+<h1 style="font-size:400%;text-align:center;"><u>Modify the DOM</u></h1>
+<p>When you click open button box get displayed and get hide when clicked on close button.</p><br>
+<button onclick="open()"  style="border:2px solid black;background-color:cyan;
+margin-left:15px;font-size:150%;padding: 15px;">OPEN!</button>
+<button onclick="close()" style="border:2px solid black;background-color:cyan;
+margin-left:40px;font-size:150%;padding: 15px;">CLOSE!</button><br><br>
+<p style="border:2px solid tomato;margin-left:5%;margin-right:50%;padding:7px;text-align:center;font-size:150%;" id="demo">This Text Will will 
+get displayed when clicked open button and get hide when clicked on close button.</p>
+<br><br>
+
+</body>
+</html>
