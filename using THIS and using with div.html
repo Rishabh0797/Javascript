@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>working with "this"
+</title>
+<script>
+function displayme(element){
+console.log(element.id);
+}
+</script>
+</head>
+<body>
+<p>Click text or image and see the changes in console it will show up in console</p><br>
+<img src = "https://image.shutterstock.com/image-illustration/illustration-international-passengers-infrared-thermal-600w-1640970700.jpg" alt = "Awesome Thermal Scan Image" onclick="console.log(this.alt)">
+<hr>
+<div onclick = "console.log(this.innerHTML)">Hi There, checking out a div</div>
+
+<hr><br>
+<p>Click text or image and see the changes in console it will show up there id's</p>
+
+<img src = "https://image.shutterstock.com/image-photo/beautiful-dew-drop-water-on-600w-1689009508.jpg" alt = "Another Beautiful Picture" id = "demo-1" onclick="displayme(this)">
+
+<div onclick = "displayme(this)" id = "demo-2">Another Div</div>
+
+
+</body>
+</html>
