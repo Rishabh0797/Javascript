@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><title>factorial of a number</title>
+</head>
+<body>
+<h1>Factorial of a number</h1>
+<p id="demo">Factorial of a number is</p>
+<script>
+var x = prompt("Enter any positive number");
+var y = parseInt(x);
+x=y;
+var fact=y;
+for(y--;y>=1;y--)
+{
+   fact=fact*y;
+ }
+document.getElementById("demo").innerHTML = "Factorial of a number is = " + fact;
+</script>
+</body>
+</html>
