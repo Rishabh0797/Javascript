@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><title>Printing Fibonacci Series</title>
+</head>
+</body>
+<h1>The Fibonacci Series</h1>
+<p>The Fibonacci Series is a follow as :-</p>
+<script>
+var a,b,c,i;
+a=0;
+b=1;
+var n =prompt("Enter number upto which you want to print fibo series");
+for(i=0;i<n;i++)
+ {
+ document.write(a + " <br>");
+    c=a+b;
+	a=b;
+	b=c;
+ }
+
+</script>
+</body>
+</html>
