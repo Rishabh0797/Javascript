@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><title>Using General sibling selector(CSS Combinators)</title>
+<style>
+div ~ p{
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<div>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<section><p>This is some text.</p></section>
+<p>This is some text.</p>
+</div>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<h3>Using (~) between selectors : all of thes sibling will get this CSS style.</h3>
+
+</body>
