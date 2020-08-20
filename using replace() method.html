@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><title>using replace() method</title></head>
+<body>
+<h1>Using replace() method</h1>
+<button onclick="test()">try it</button><br><br>
+<p id="para">Hi! John , how are you.</p>
+<script>
+function test()
+{
+ var a = document.getElementById("para").innerHTML;
+ var b = prompt("Enter your name");
+ var t = a.replace("John",b.toUpperCase());
+ document.getElementById("para").innerHTML=t;
+}
+</script>
+</body>
+</html>
