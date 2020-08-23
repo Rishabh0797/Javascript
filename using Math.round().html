@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>using Math.round()</title>
+<head>
+    <body>
+        <h1>Math.round()</h1>
+        <p>Refresh and Enter any decimal value in decimal and get the round off of that number.</p><br>
+        <form>
+            <input type="number" onblur="test()" id="para1">
+        </form>
+        <p id="para" style="font-size: 50px;"></p>
+           <script>
+               function test(){
+               var b=document.getElementById("para1").value;
+               document.getElementById("para").innerHTML=Math.round(b);}
+           </script>
+    </body>
+</html>
