@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+      <script>
+        function frequency()
+        {
+        var aa=document.getElementById("aa").value;
+        var i;
+        var a=[];
+        var x="";
+        for(i=0;i<aa;i++)
+                          {
+                          a[i]=prompt("Enter element");
+                          }
+         for(i=0;i<a.length;i++)
+        {
+           var c=1;
+            var j;
+            for(j=i+1;j<aa;j++)
+            {
+              if(a[i]==a[j])
+              {
+                  c++;
+                  a[j]="#";
+              }
+            }
+           if(c>=1 && a[i]!="#")
+           x=x+a[i]+" has frequency "+c+"<br>";
+        }
+
+        document.getElementById("demo").innerHTML=x;
+        }
+        </script>
+    </head>
+
+    <body>
+        <h1>Finding Frequency</h1>
+        <p>Just Enter Length of array and enter the value in prompt boxes:</p><br><br>
+      
+      Enter Number of Elements to enter in an Array : <input type="number" id="aa">
+      <br>
+      <input type="button" value="Find Frequency" onclick="frequency()">
+      <p id="demo"></p>
+      </body>
+</html>
