@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>using Math.pow()</title>
+<head>
+    <body>
+        <h1>Math.pow()</h1>
+        <p> Enter any  value and get the power of that number.</p><br>
+        <form>
+            <input style="font-size:150%;" type="number"  id="para1">
+            <sup><input style="width:40px;" type="number"  id="para2"></sup>
+        </form><br>
+        <button onclick="test()">Get Power</button>
+        <p id="para" style="font-size: 50px;"></p>
+           <script>
+               function test(){
+               var b=document.getElementById("para1").value;
+               var a=document.getElementById("para2").value;
+               document.getElementById("para").innerHTML=Math.pow(b,a);}
+           </script>
+    </body>
+</html>
