@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title>using Math.sqrt()</title>
+<head>
+    <body>
+        <h1>Math.sqrt()</h1>
+        <p> Enter any  value and get the square root of that number.</p><br>
+        <form>
+            <input style="font-size:150%;background-image:linear-gradient(rgb(57, 14, 212),rgb(214, 15, 124));color:white;text-shadow:10px;" type="number"  id="para1">
+        </form><br>
+        <button onclick="test()">Get square root</button>
+        <p id="para" style="font-size: 50px;"></p>
+           <script>
+               function test(){
+               var b=document.getElementById("para1").value;
+               document.getElementById("para").innerHTML=Math.sqrt(b);}
+           </script>
+    </body>
+</html>
