@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>using Math.ceil() & Math.floor()</title>
+<head>
+    <body>
+        <h1>Math.ceil()</h1>
+        <p> Enter any  decimal value and get the value to round up to its near integer.</p><br>
+        <form>
+            <input style="font-size:150%;" type="number"  id="para1">
+        </form><br>
+        <button onclick="test()">rounded up</button>
+          <p id="demo" style="font-size: 50px;"></p>
+
+          <br>
+          <h1>Math.floor()</h1>
+          <p> Enter any  decimal value and get the value to round down to its near integer.</p><br>
+        
+          <form>
+            <input style="font-size:150%;" type="number"  id="para2">
+        </form><br>
+        <button onclick="test1()">rounded down</button>
+      
+        <p id="demo1" style="font-size: 50px;"></p>
+
+           <script>
+               function test(){
+               var b=document.getElementById("para1").value;
+               document.getElementById("demo").innerHTML=Math.ceil(b);
+               }
+               function test1(){
+               var b=document.getElementById("para2").value;
+               document.getElementById("demo1").innerHTML=Math.floor(b);
+               }
+           </script>
+    </body>
+</html>
