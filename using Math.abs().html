@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title>using Math.abs()</title>
+<head>
+    <body>
+        <h1>Math.abs()</h1>
+        <p> Enter any  negative value and get the absolute(positive) value of that number.</p><br>
+        <form>
+            <input style="font-size:150%;" type="number"  id="para1">
+        </form><br>
+        <button onclick="test()">Get absolute value </button>
+        <p id="para" style="font-size: 50px;"></p>
+           <script>
+               function test(){
+               var b=document.getElementById("para1").value;
+               document.getElementById("para").innerHTML=Math.abs(b);}
+           </script>
+    </body>
+</html>
