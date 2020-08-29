@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>using lastIndexOf() method</title>
+</head>
+<body>
+    <h1>Using lastIndexOf() method</h1>
+    <br><p>it will start searching for word from last of paragraph.</p><br>
+    <p id="para">"The best and most beautiful things in the 
+        world cannot be seen or even touched - they must be felt with the heart." -Helen Keller</p>
+        <button onclick="test()">Search word</button>
+        <br>
+        <p  id="para1"></p>
+    <script>
+        var a=document.getElementById("para").innerHTML;
+        function test()
+        {
+           var b=prompt("Enter Word you want to SEARCH");
+           var c=a.lastIndexOf(b);
+           document.getElementById("para1").innerHTML="Index 0f \""+b+"\" is "+c;
+        }
+    </script>    
+</body>
+</html>
