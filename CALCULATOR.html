@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Page Title</title>
+      <style>
+	  h1
+      {
+	   background-color:yellow;
+	  color:red;
+	  font-family:cursive;
+	  margin-left:30%;
+	  margin-right:30%;
+	  border:3px dashed green;
+	  }
+        .one{
+		  margin-left:10%;
+		  width:40%;
+		  margin-top:50px;
+		  height:350px;
+		  background-color:cyan;
+		  border-radius:15px;
+        }
+		.two{
+		margin-left:55%;
+		  margin-top:-300px;
+		 width:40%;
+		  height:450px;
+		  background-color:rgba(180,180,180,0.5);
+		  padding:10px;
+		  box-sizing: border-box;
+		  border-radius:15px;
+		}
+		button{
+		width:100px;
+		height:30px;
+		margin-top:20px;
+		}
+		p{
+		height:30px;
+		background-color:white;
+		padding:10px;
+		}
+		.three{
+		background-color:white;
+		height:30px;
+		color:green;
+		}
+      </style>
+    </head>
+
+    <body>
+      
+      <h1 style="text-align:center;">Claculator</h1>
+	  
+	  <div class="one">
+      <button onclick="teat3(1)" style="margin-left:10px;">1</button><button onclick="teat3(2)" style="margin-left:15px;">2</button><button onclick="teat3(3)" style="margin-left:15px;">3</button><button onclick="test2(1)"  style="margin-left:15px;">+</button>
+      <br><br><button onclick="teat3(4)" style="margin-left:10px;">4</button><button onclick="teat3(5)" style="margin-left:15px;">5</button><button onclick="teat3(6)" style="margin-left:15px;">6</button><button onclick="test2(2)" style="margin-left:15px;">-</button>
+      <br><br><button onclick="teat3(7)" style="margin-left:10px;">7</button><button onclick="teat3(8)" style="margin-left:15px;">8</button><button onclick="teat3(9)" style="margin-left:15px;">9</button><button onclick="test2(3)"  style="margin-left:15px;">*</button>
+      <br><br><button onclick="cancel()" style="margin-left:10px;">C</button><button onclick="teat3(0)" style="margin-left:15px;">0</button><button onclick="test4()" style="margin-left:15px;">=</button><button onclick="test2(4)"  style="margin-left:15px;">/</button>
+      <br><br><button onclick="bspace()" style="margin-left:10px;width:90%;">Backspace</button>
+	  </div>
+	  <div class="two">
+	  <h3>First Input:</h3>
+       <p id="para3">undefined</p><br>
+	   <h3>Second Input:</h3>
+       <p id="para2">undefined</p><br>
+	    <h3>Answer:</h3>
+        <b><p id="para1" style="color:green;">undefined</p></b>
+	   </div>
+	  
+        <script>
+          var a=0;
+          var num=0;
+          var snum=0;
+        function teat3(n)
+		{
+		             var x=parseInt(n);
+		             console.log(x+" "+num);
+		             if(num==0)
+		                {
+		                   a=a*10+x;
+			                 document.getElementById("para3").innerHTML=a;
+                    }
+		             else
+		                {
+		                  snum=snum*10+x;
+			                document.getElementById("para2").innerHTML=snum;
+		                }
+          
+           }
+		  function test2(n)
+		  {
+		      num=parseInt(n);
+		  }
+          function test4()
+          {
+          if(num==1)
+          {
+            a+=snum;
+             document.getElementById("para1").innerHTML=a;
+          }
+          else if(num==2)
+          {
+            a-=snum;
+          document.getElementById("para1").innerHTML=a;
+          }
+          else if(num==3)
+          {
+          a*=snum; 
+          document.getElementById("para1").innerHTML=a;
+          }
+          else
+          {
+          a/=snum;
+          document.getElementById("para1").innerHTML=a;
+          }
+          }
+          function cancel()
+		  {
+		  num=0;
+		  snum=0;
+		  a=0;
+		  document.getElementById("para1").innerHTML="undefined";
+		  document.getElementById("para2").innerHTML="undefined";
+		  document.getElementById("para3").innerHTML="undefined";
+		  }
+		  function bspace(){
+		    if(num==0)
+		  {
+		    a/=10;
+			a=Math.floor(a);
+			document.getElementById("para3").innerHTML=a;
+          }
+		  else
+		  {
+		    snum/=10;
+			snum=Math.floor(snum);
+			document.getElementById("para2").innerHTML=snum;
+		  }
+		  }
+      </script>
+      </body>
+</html>
