@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head><title>using concat() method</title>
+</head>
+<body onload="test()"> 
+    <h1>concat() method</h1>
+    <p id="para" style="font-size:150%"></p>
+    <script>
+        function test(){
+           var a=prompt("Enter first name:");
+           var b=prompt("Enter second name");
+           var res=a.concat(" ",b);
+           document.getElementById("para").innerHTML="Hello! "+res+" Have a Nice Day :)";
+
+        }
+    </script>
+</body>
