@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head><title>using Number() Method</title></head>
+<body onload="test()">
+    <h1> Number() Method</h1>
+    <p>
+        Number() will convert String to a number.
+    </p>
+    <p id="para2" style="font-size:x-large;color:green;"></p>
+    <p id="para" ></p>
+    <p id="para3" style="font-size:x-large;color:green;"></p>
+    <p id="para1" ></p>
+    <script>
+        function test()
+        {
+            var a=prompt("Enter a number")
+            document.getElementById("para2").innerHTML=a+123;
+            document.getElementById("para").innerHTML="   here the number is  String datatype so concatenation take place.";
+            var b=Number(a);
+            document.getElementById("para3").innerHTML=b+123 ;
+            document.getElementById("para1").innerHTML="   here the number is converted to number hence addition take place";
+        }
+    </script>
+</body>
+</html>
