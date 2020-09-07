@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>using toUTCString() method</title></head>
+<body>
+    <h1>toUTCString() method</h1>
+    <p>toUTCString() method converts date to UTC String format.</p>
+    <button onclick="test()">click me</button>
+    <p id="para"></p>
+    <script>
+        function test(){
+            var a=new Date();
+            document.getElementById("para").innerHTML=a.toUTCString();
+        }
+    </script>
+</body>
+</html>
