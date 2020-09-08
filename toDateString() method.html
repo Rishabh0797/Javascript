@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>using toDateString() method</title></head>
+<body>
+    <h1>toDateString() method</h1>
+    <p>toDateString() method converts date to Date String format.</p>
+    <button onclick="test()">click me</button>
+    <p id="para"></p>
+    <script>
+        function test(){
+            var a=new Date();
+            document.getElementById("para").innerHTML=a.toDateString();
+        }
+    </script>
+</body>
+</html>
