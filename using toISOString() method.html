@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><title>using toISOString() method</title></head>
+<body>
+    <h1>using toISOString() method</h1>
+    <p>
+
+    </p>
+    <button onclick="test()">click me</button>
+    <p id="para"></p>
+    <script>
+        function test(){
+            var a=new Date()
+            document.getElementById("para").innerHTML=a.toISOString();
+        }
+    </script>
+</body>
+</html>
