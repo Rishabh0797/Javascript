@@ -6,10 +6,18 @@
     <p>Intput is given as year, month, date, hour, minute, second and millisecond.</p>
     <button onclick="test()">click me</button>
     <p id="demo"></p>
+    <br>
+    <p>This syntax (YYYY-MM-DD) is also the preferred JavaScript date format: </p>
+    <button onclick="test1()">click me</button>
+    <p id="demo1"></p>
     <script>
         function test(){
              var  a =new Date(2018,2,23,14,56,12,10);
              document.getElementById("demo").innerHTML=a;
+        }
+         function test1(){
+             var  a =new Date("2018-03-27");
+             document.getElementById("demo1").innerHTML=a;
         }
     </script>
 </body>
