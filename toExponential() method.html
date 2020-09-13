@@ -1,16 +1,22 @@
 <!doctype html>
 <html>
-<head><title>using toExponential() method</title></head>
-<body onload="test()">
-    <h1>toExponential() method</h1>
+<head><title>using toExponential() method</title>
+<style>
+body{
+background-color:hotpink;
+}
+</style>
+</head>
+<body onload="test1()">
+    <h1 style="color:red;font-size:200%;">toExponential() method</h1>
     <p>It is used to set digits after a decimal point.</p>
+    <p>Here are some of the Examples :)</p>
     <p id="para"></p>
     <script>
-        function test(){
+        function test1(){
         var x=10.123456789987654;
         document.getElementById("para").innerHTML=x.toExponential()+"<br>"+x.toExponential(2)+"<br>"+x.toExponential(4)+"<br>";
         }  
     </script>
-
 </body>
 </html>
